@@ -38,8 +38,8 @@ class Fritzi:
             headers = {
                 'Authorization': f'AVM-SID {self.get_token()}'
             }
-            print(f"Sending GET request to {self.url}/api/v0/generic/landevice")
-            #external_response = await client.get(f"{self.url}/api/v0/generic/landevice", headers=headers)
+            #print(f"Sending GET request to {self.url}/api/v0/generic/landevice")
+            external_response = await client.get(f"{self.url}/api/v0/generic/landevice", headers=headers)
             #print("Response status code:", external_response.status_code)
             #print("Response body:", external_response.text)
             external_response.raise_for_status() 
