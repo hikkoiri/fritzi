@@ -32,6 +32,9 @@ If you intend to further extend the scope of functionalities (especially looking
 ### Install dependencies
 
 ```bash
+python3 -m venv ./venv
+source ./venv/bin/activate
+
 pip3 install -r requirements.txt
 ```
 
@@ -53,7 +56,7 @@ python3 main.py
 
 ### Test
 
-Open `http://localhost:8000/docs` to Swagger interface or `http://localhost:8000/redoc` for Redocly interface.
+Open `http://localhost:8001/docs` to Swagger interface or `http://localhost:8001/redoc` for Redocly interface.
 
 ## Deployment
 ### systemd service
