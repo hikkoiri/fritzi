@@ -50,10 +50,15 @@ class Fritzi:
         thinned_out = []
         for device in devices:
             thinned_device = {
-            'uid': device.get('UID'),
-            'ip': device.get('ip'),
-            'active': device.get('active') == '1',
-            'friendly_name': device.get('friendly_name')
+                'uid': device.get('UID'),
+                'ip': device.get('ip'),
+                'active': device.get('active') == '1',
+                'friendly_name': device.get('friendly_name'),
+                'firstused': device.get('firstused'),
+                'lastused': device.get('lastused'),
+                'online': device.get('online') == '1',
+                'static_dhcp': device.get('static_dhcp') == '1',
+                'flags': device.get('flags')
             }
             thinned_out.append(thinned_device)
         return thinned_out

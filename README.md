@@ -2,7 +2,6 @@
 
 - [fritzi](#fritzi)
   - [Goal](#goal)
-  - [API definition](#api-definition)
   - [Security \& Safety](#security--safety)
   - [Development](#development)
     - [Install dependencies](#install-dependencies)
@@ -16,9 +15,6 @@
 
 ## Goal
 Provide an easy-to-use REST interfaces for FRITZ!Box routers.
-
-## API definition
-See `openapi.json`.
 
 ## Security & Safety
 > As always the same principle applies: Don't do anything stupid.
