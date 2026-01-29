@@ -11,7 +11,7 @@ app = FastAPI(
 )
 app.include_router(Controller.router)
 
-origins = ["http://localhost:3000", "https://carlo-hildebrandt.de"]
+origins = ["http://localhost:3000", "http://localhost:3006","https://carlo-hildebrandt.de", "https://fritzgerald.internal.carlo-hildebrandt.de"]
 
 app.add_middleware(
     CORSMiddleware,
